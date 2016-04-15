@@ -32,7 +32,7 @@ services:
   web:
     image: mashape/kong
     depends_on:
-      - "cassandra"
+      - cassandra
     container_name: kong
     ports:
       - "8000:8000"
