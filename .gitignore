@@ -1,0 +1,14 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+#source files
+docker/pizzahut_services
+
+# Other
+.DS_Store
