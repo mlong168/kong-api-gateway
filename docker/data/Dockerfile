@@ -1,4 +1,4 @@
-FROM mysql
+FROM mysql:5.5
 
 VOLUME /var/lib/mysql
 
