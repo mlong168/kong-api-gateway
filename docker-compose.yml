@@ -1,5 +1,5 @@
 #data:
-#  build: docker/data/.
+#  build: docker/mysql-data/.
 #mysql:
 #  image: mysql:5.5
 #  container_name: mysql
@@ -11,7 +11,7 @@
 #    MYSQL_PASSWORD: qo5cms
 #    MYSQL_ROOT_PASSWORD: qo5cms
 #  volumes:
-#    - ./docker/data:/docker-entrypoint-initdb.d
+#    - ./docker/mysql-data:/docker-entrypoint-initdb.d
 #  volumes_from:
 #    - data
 #api:
@@ -25,11 +25,18 @@
 #    ENVIRONMENT: development
 #  links:
 #    - mysql
+cassandra-data:
+  container_name: cassandra-data
+  build: docker/cassandra-data/.
 cassandra:
   image: cassandra:2.2.5
   container_name: cassandra
   ports:
     - "9042:9042" 
+  #volumes:
+  #  - ./docker/cassandra-data:/var/lib/cassandra
+  volumes_from:
+    - cassandra-data
 kong:
   build: docker/kong/.
   container_name: kong
