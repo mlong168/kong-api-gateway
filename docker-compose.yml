@@ -7,7 +7,9 @@ mysql:
     - "3306:3306"
   environment:
     MYSQL_DATABASE: qo5ee
-    MYSQL_ROOT_PASSWORD: password
+    MYSQL_USER: qo5cms
+    MYSQL_PASSWORD: qo5cms
+    MYSQL_ROOT_PASSWORD: qo5cms
   volumes:
     - ./docker/data:/docker-entrypoint-initdb.d
   volumes_from:
@@ -19,14 +21,16 @@ api:
     - "8081:80"
   volumes:
     - ./docker/pizzahut_services:/usr/share/nginx/html
+  environment:
+    ENVIRONMENT: development
   links:
     - mysql
 cassandra:
-  image: mashape/cassandra
+  image: cassandra:2.2.5
   container_name: cassandra
   ports:
     - "9042:9042" 
-web:
+kong:
   build: docker/kong/.
   container_name: kong
   ports:
@@ -36,8 +40,10 @@ web:
     - "7946:7946"
     - "7946:7946/udp"
   environment:
-    CASSANDRA_HOSTNAME: cassandra
-    CASSANDRA_PORT: 9042
+   CASSANDRA_HOSTNAME: cassandra
+   CASSANDRA_PORT: 9042
+  security_opt:
+    - seccomp:unconfined
   links:
     - cassandra
 ui:
