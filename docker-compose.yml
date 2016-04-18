@@ -1,30 +1,31 @@
-data:
-  build: docker/data/.
-mysql:
-  image: mysql:5.5
-  container_name: mysql
-  ports:
-    - "3306:3306"
-  environment:
-    MYSQL_DATABASE: qo5ee
-    MYSQL_USER: qo5cms
-    MYSQL_PASSWORD: qo5cms
-    MYSQL_ROOT_PASSWORD: qo5cms
-  volumes:
-    - ./docker/data:/docker-entrypoint-initdb.d
-  volumes_from:
-    - data
-api:
-  image: richarvey/nginx-php-fpm
-  container_name: api
-  ports:
-    - "8081:80"
-  volumes:
-    - ./docker/pizzahut_services:/usr/share/nginx/html
-  environment:
-    ENVIRONMENT: development
-  links:
-    - mysql
+#data:
+#  build: docker/data/.
+#mysql:
+#  image: mysql:5.5
+#  container_name: mysql
+#  ports:
+#    - "3306:3306"
+#  environment:
+#    MYSQL_DATABASE: qo5ee
+#    MYSQL_USER: qo5cms
+#    MYSQL_PASSWORD: qo5cms
+#    MYSQL_ROOT_PASSWORD: qo5cms
+#  volumes:
+#    - ./docker/data:/docker-entrypoint-initdb.d
+#  volumes_from:
+#    - data
+#api:
+#  image: richarvey/nginx-php-fpm
+#  container_name: api
+#  ports:
+#    - "8081:80"
+#  volumes:
+#    - ./docker/pizzahut_services:/usr/share/nginx/html
+#  environment:
+#    ENVIRONMENT: development
+#  links:
+#    - mysql
+#
 cassandra:
   image: cassandra:2.2.5
   container_name: cassandra
