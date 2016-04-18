@@ -25,7 +25,6 @@
 #    ENVIRONMENT: development
 #  links:
 #    - mysql
-#
 cassandra:
   image: cassandra:2.2.5
   container_name: cassandra
