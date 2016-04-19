@@ -2,9 +2,9 @@
 # A quick & dirty backup script for Cassandra running inside Docker.
 # Assumes /var/lib/cassandra is mounted in the container as /var/lib/cassandra because
 # docker inspect {{ .Volumes }} is not shell-friendly. (doable, but meh)
-# Also assumes Cassandra was started with 'docker run --name cassandra'.
+# Also assumes Cassandra was started with 'docker run --name cassandra-data'.
 
-export PATH=$PATH:/home/atobey/bin:/usr/local/bin
+export PATH=$PATH:~/bin:/usr/local/bin
 
 set -e
 
