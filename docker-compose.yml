@@ -33,8 +33,6 @@ cassandra:
   container_name: cassandra
   ports:
     - "9042:9042" 
-  #volumes:
-  #  - ./docker/cassandra-data:/var/lib/cassandra
   volumes_from:
     - cassandra-data
 kong:
