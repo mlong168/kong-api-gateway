@@ -2,7 +2,7 @@
 
 # Change this to 127.0.0.1 if running on linux
 
-host="192.168.99.100"
+host="127.0.0.1"
 
 # Creating the API:
 curl -d "request_host=staging-s-sprint.pizzahut.com&upstream_url=http://services.midwest01.quikorder.com" $host:8001/apis

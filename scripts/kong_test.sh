@@ -8,7 +8,7 @@ provision_key="23516763ec0c4311c39c48c34c5a881d"
 authenticated_userid="phi"
 access_token=""
 host="staging-s-sprint.pizzahut.com"
-docker_host="192.168.99.100"
+docker_host="127.0.0.1"
 
 # Requesting the access token (setting the authenticated user ID to bob):
 
