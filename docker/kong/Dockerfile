@@ -1,4 +1,4 @@
-FROM mashape/kong
+FROM mashape/kong:0.7.0
 
 ENV CASSANDRA_HOSTNAME cassandra
 ENV CASSANDRA_PORT 9042
