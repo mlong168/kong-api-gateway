@@ -4,7 +4,7 @@
 
 host="127.0.0.1"
 request_host="staging-s-sprint.pizzahut.com"
-upstream_url="http://services.midwest01.quikorder.com"
+upstream_url="staging-s-sprint.midwest01.quikorder.com"
 username="pizzahut"
 redirect_uri="https://pizzahut.com/"
 
