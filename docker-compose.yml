@@ -30,7 +30,7 @@ cassandra-data:
   build: docker/cassandra-data/.
 cassandra:
   image: cassandra:2.2.5
-  container_name: cassandra
+  container_name: kong-database
   ports:
     - "9042:9042" 
   volumes_from:
@@ -45,7 +45,7 @@ kong:
     - "7946:7946"
     - "7946:7946/udp"
   environment:
-   CASSANDRA_HOSTNAME: cassandra
+   CASSANDRA_HOSTNAME: kong-database
    CASSANDRA_PORT: 9042
   security_opt:
     - seccomp:unconfined

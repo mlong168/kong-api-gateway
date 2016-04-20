@@ -1,6 +1,6 @@
-FROM mashape/kong:0.7.0
+FROM mashape/kong
 
-ENV CASSANDRA_HOSTNAME cassandra
+ENV CASSANDRA_HOSTNAME kong-database
 ENV CASSANDRA_PORT 9042
 
 COPY start_kong /usr/bin/start_kong
