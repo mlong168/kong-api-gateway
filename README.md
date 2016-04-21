@@ -11,7 +11,7 @@ Build orchestration allows complicated multi-faceted and highly-available distri
 - Docker-swarm -- TBD
 - Kong-API-Gateway-with-oAuth2-config-scripts
 - Kong-UI
-- Multi-Datacenter-Four-NodeDistributed Cassandra Cluster
+- Multi-Datacenter-Four-Node Distributed Cassandra Cluster
 1. Systems not included but ready for build:
   * API-EndPoints
   * MySQL-NDB
