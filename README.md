@@ -15,3 +15,5 @@ Build orchestration allows complicated multi-faceted and highly-available distri
 1. Systems not included but ready for build:
   * API-EndPoints
   * MySQL-NDB
+
+[logo]: https://drive.google.com/file/d/0B4VxFW1sD4MMNjVZM18wbmJCTHc/view?usp=sharing
