@@ -42,7 +42,7 @@ host="127.0.0.1"
 request_host="testme.com"
 upstream_url="https://mockbin.com"
 username="bob"
-redirect_uri="https://google.com”
+redirect_uri="https://google.com"
 ```
 - Run me:
  * `sh scripts/kong_config.sh`
