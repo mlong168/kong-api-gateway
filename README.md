@@ -1,0 +1,29 @@
+# kong-api-gateway
+
+Kong-API-Gateway Documentation 
+ 
+
+The purpose of this document is to outline the steps to be taken in order to install and configure the Kong-API-Gateway application and to document the infrastructure & configuration used to deploy said application.
+
+
+Layout and Architecture
+Orchestrated Builds with Docker and Docker-Compose
+Docker Security
+
+Layout and Architecture 
+
+Orchestrated Builds with Docker and Docker-Compose
+
+Build orchestration allows complicated multi-faceted and highly-available distributed systems to be deployed to a high standard and easily packaged and deployed to test/prod environments, resulting in the ability to rapidly, reliably and repeatedly push out enhancements and bug fixes to customers at low risk and with minimal manual overhead. Here’s how it would look. 
+
+The system was built using the following technologies:
+Docker
+Docker-machine
+Docker-compose
+Docker-swarm -- TBD
+Kong-API-Gateway-with-oAuth2-config-scripts
+Kong-UI
+Four-Node Multi-Datacenter Distributed Cassandra Cluster
+Systems not included, but ready for build
+API-EndPoints
+MySQL-NDB
