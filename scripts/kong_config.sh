@@ -3,10 +3,10 @@
 # Change this to 127.0.0.1 if running on linux
 
 host="127.0.0.1"
-request_host="staging-s-sprint.pizzahut.com"
-upstream_url="http://staging-s-sprint.midwest01.quikorder.com"
-username="pizzahut"
-redirect_uri="https://pizzahut.com/"
+request_host="testme.com"
+upstream_url="https://mockbin.com"
+username="bob"
+redirect_uri="https://google.com"
 
 # Creating the API:
 curl -d "request_host=$request_host&upstream_url=$upstream_url" $host:8001/apis
