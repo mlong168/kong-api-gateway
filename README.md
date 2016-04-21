@@ -33,7 +33,7 @@ Build orchestration allows complicated multi-faceted and highly-available distri
  * Use Linux
 - Configure Kong by command line:
  * `vi scripts/kong_config.sh`
-- Change me:
+
 ```
 # Change this to 127.0.0.1 if running on linux
 host="127.0.0.1"
