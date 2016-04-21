@@ -19,7 +19,7 @@ Build orchestration allows complicated multi-faceted and highly-available distri
 ## Deploy
 
 - Clone Me: 
- * `git clone https://github.com/NationalSystems/kong-api-gateway.git`
+ * `git clone https://github.com/mlong168/kong-api-gateway.git`
 - Run this: 
  * `cd kong-api-gateway/`
  * `docker-compose up -d`
