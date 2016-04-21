@@ -20,7 +20,7 @@
 #  ports:
 #    - "8081:80"
 #  volumes:
-#    - ./docker/pizzahut_services:/usr/share/nginx/html
+#    - ./docker/api_services:/usr/share/nginx/html
 #  environment:
 #    ENVIRONMENT: development
 #  links:

@@ -21,4 +21,4 @@ curl -d "username=$username" $host:8001/consumers/
 
 # Creating OAuth 2.0 credentials for the consumer:
 
-curl -d "name=PHI-Staging&redirect_uri=$redirect_uri" $host:8001/consumers/pizzahut/oauth2/
+curl -d "name=PHI-Staging&redirect_uri=$redirect_uri" $host:8001/consumers/$username/oauth2/
