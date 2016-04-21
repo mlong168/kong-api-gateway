@@ -19,20 +19,20 @@ Build orchestration allows complicated multi-faceted and highly-available distri
 ## Running
 
 - Clone Me: 
-`git clone https://github.com/NationalSystems/kong-api-gateway.git`
+* `git clone https://github.com/NationalSystems/kong-api-gateway.git`
 - Run this: 
-`cd kong-api-gateway/`
-`docker-compose up -d`
+* `cd kong-api-gateway/`
+* `docker-compose up -d`
 - Linux:
-`http://127.0.0.1:`
+* `http://127.0.0.1:`
 - Mac:
-`docker-machine ip`
-`http://$ip:8080`
+* `docker-machine ip`
+* `http://$ip:8080`
 - Windows:
  * Buy a Mac
  * Use Linux
 - Configure Kong by command line:
-`vi scripts/kong_config.sh`
+* `vi scripts/kong_config.sh`
 - Change me:
 ```
 # Change this to 127.0.0.1 if running on linux
@@ -43,6 +43,8 @@ username="bob"
 redirect_uri="https://google.com”
 ```
 - Run me:
-docker-compose ps
+* `docker-compose ps`
 
-![Image of Yaktocat](/img/Kong-APIGateway-Architecture.png?raw=true)
+![output](/img/docker-ps.jpg?raw=true)
+
+![Kong-APIGateway](/img/Kong-APIGateway-Architecture.png?raw=true)
