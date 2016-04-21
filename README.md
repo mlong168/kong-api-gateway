@@ -36,7 +36,6 @@ Build orchestration allows complicated multi-faceted and highly-available distri
 
 - Configure Kong by command line:
  * `vi scripts/kong_config.sh`
-
 ```
 # Change this to 127.0.0.1 if running on linux
 host="127.0.0.1"
@@ -46,10 +45,13 @@ username="bob"
 redirect_uri="https://google.com”
 ```
 - Run me:
- * `scripts/kong_config.sh
+ * `sh scripts/kong_config.sh`
  * `docker-compose ps`
 
 ![output](/img/docker-ps.jpg?raw=true)
+
+## Test
+ * `scripts/kong_test`
 
 ## Scale
 
