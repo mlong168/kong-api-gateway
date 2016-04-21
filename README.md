@@ -33,7 +33,6 @@ Build orchestration allows complicated multi-faceted and highly-available distri
  * Use Linux
 - Configure Kong by command line:
 `vi scripts/kong_config.sh`
-
 - Change me:
 ```
 # Change this to 127.0.0.1 if running on linux
@@ -42,8 +41,8 @@ request_host="testme.com"
 upstream_url="https://mockbin.com"
 username="bob"
 redirect_uri="https://google.com”
-Run me:
-docker-compose ps
 ```
+- Run me:
+docker-compose ps
 
 ![Image of Yaktocat](/img/Kong-APIGateway-Architecture.png?raw=true)
