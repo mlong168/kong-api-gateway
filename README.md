@@ -16,4 +16,4 @@ Build orchestration allows complicated multi-faceted and highly-available distri
   * API-EndPoints
   * MySQL-NDB
 
-[logo]: 
+![Image of Yaktocat](https://drive.google.com/file/d/0B4VxFW1sD4MMcUlyWnNTZnFSWUU/view)
