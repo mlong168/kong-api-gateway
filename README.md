@@ -31,6 +31,9 @@ Build orchestration allows complicated multi-faceted and highly-available distri
 - Windows:
  * Buy a Mac
  * Use Linux
+
+## Configure
+
 - Configure Kong by command line:
  * `vi scripts/kong_config.sh`
 
@@ -43,8 +46,13 @@ username="bob"
 redirect_uri="https://google.com”
 ```
 - Run me:
+ * `scripts/kong_config.sh
  * `docker-compose ps`
 
 ![output](/img/docker-ps.jpg?raw=true)
+
+## Scale
+
+- TBD
 
 ![Kong-APIGateway](/img/Kong-APIGateway-Architecture.png?raw=true)
