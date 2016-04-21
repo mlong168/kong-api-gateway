@@ -16,7 +16,7 @@ Build orchestration allows complicated multi-faceted and highly-available distri
   * API-EndPoints
   * MySQL-NDB
 
-## Running
+## Deploy
 
 - Clone Me: 
  * `git clone https://github.com/NationalSystems/kong-api-gateway.git`
